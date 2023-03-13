@@ -2,10 +2,10 @@ const { default: axios } = require("axios");
 const jwt = require("jsonwebtoken");
 
 const payload = {
-  iss: process.env.API_KEY,
+  iss: "VdK72Ly1Tp2z3DjlfiTTMw",
   exp: new Date().getTime() + 5000,
 };
-const token = jwt.sign(payload, process.env.API_SEC);
+const token = jwt.sign(payload, "yKfXPJT8SUAVuZGnrV1JYMoOK0D9fOdOgf0y");
 
 const meetingdetails = {
   topic: "Demo Meeting",
