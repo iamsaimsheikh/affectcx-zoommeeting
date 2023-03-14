@@ -23,7 +23,8 @@ const meetingdetails = {
     mute_upon_entry: "False",
     watermark: "true",
     audio: "voip",
-    auto_recording: "cloud",
+    auto_recording: "none",
+    waiting_room:'False',
   },
 };
 
