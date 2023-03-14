@@ -39,7 +39,10 @@ const createMeeting = async () => {
       },
     }
   );
-  return response.data.join_url;
+  const start_url = response.data.start_url;
+  const zak = start_url.split("?")[1].split("=")[1];
+  const meeting_id = response.data.id;
+  return { zak: zak, meeting_id: meeting_id };
 };
 
 module.exports = { createMeeting: createMeeting };
